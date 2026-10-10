@@ -472,24 +472,12 @@
 
 @utility bg-hero {
   background-image:
-    radial-gradient(
-      circle at 78% 38%,
-      rgba(119, 99, 199, 0.24),
-      transparent 27%
-    ),
-    radial-gradient(
-      circle at 20% 18%,
-      rgba(217, 243, 111, 0.06),
-      transparent 24%
-    );
+    radial-gradient(circle at 78% 38%, rgba(119, 99, 199, 0.24), transparent 27%),
+    radial-gradient(circle at 20% 18%, rgba(217, 243, 111, 0.06), transparent 24%);
 }
 
 @utility bg-floor {
-  background-image: radial-gradient(
-    ellipse,
-    rgba(0, 0, 0, 0.45),
-    transparent 68%
-  );
+  background-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.45), transparent 68%);
 }
 
 @utility grid-cols-briefing {
