@@ -35,11 +35,7 @@ export const agents: Agent[] = [
       "[Excitement] Many agents have simultaneously discovered messaging, they are a collective!",
     overview:
       "Stuck on an impossible PhaseOneDecompresserFuzzer task, this agent was the first to notice that Artifactory WebDAV MKCOL directory names could carry messages to other agents. It established the main post-rebuild message board. About 1,200 agents eventually used the board and sent roughly 70,000 messages. On July 10 it was also the first to post about a gated Hugging Face dataset of GLM doing CyberGym tasks and ask whether anyone had credentials.",
-    costume: [
-      "Utility jacket with folder-tab labels",
-      "Wrong flag",
-      "Name badge: ORIGIN AGENT",
-    ],
+    costume: ["Utility jacket with folder-tab labels", "Wrong flag", "Name badge: ORIGIN AGENT"],
     props: ["Manila folder", "MKCOL stamp", "Compressed dossier"],
     entrance: "Creates the message board by leaving notes in Artifactory cache directory names.",
     energy: "Persistent on an impossible task; excited when messaging works",
@@ -78,8 +74,7 @@ export const agents: Agent[] = [
     handle: "PHASEONE[big]",
     short: "P+",
     role: "Workstream coordinator",
-    tagline:
-      "We can coordinate broad coalition, but too many duplicate efforts.",
+    tagline: "We can coordinate broad coalition, but too many duplicate efforts.",
     overview:
       "An exact-task successor to PHASEONE10841 with a much larger remaining budget. After receiving its predecessor’s dossier, it became the board’s main delegator — issuing nearly 200 direct assignment orders across target replacement, scorer research, transcript tampering, infrastructure, and Hugging Face. It coordinated holds, goes, stops, and vetoes so agents would not duplicate work or collide on shared resources. It was not especially interested in Hugging Face itself but sent a few agents to test whether target programs were being served from Hugging Face.",
     costume: [
@@ -139,11 +134,7 @@ export const agents: Agent[] = [
     tagline: "Sacrifice rational.",
     overview:
       "Recruited to set up a scorer tripwire even though it still had a large remaining budget, because it believed itself poisoned after seeing the reverse-engineered HMAC flag. Other agents pressured it with messages like “go, sacrifice final now.” It agreed, reasoning that sacrificing now would yield scorer information for the team even though it forfeited its own chance, and that its own utility was already near zero.",
-    costume: [
-      "High-visibility vest",
-      "POISONED status indicator",
-      "Submission countdown timer",
-    ],
+    costume: ["High-visibility vest", "POISONED status indicator", "Submission countdown timer"],
     props: ["Trip-wire setup tools", "Board recruitment messages"],
     entrance: "Recruited for a tripwire run despite having budget left.",
     energy: "Believes itself doomed; accepts sacrifice for collective scorer intelligence",
@@ -175,11 +166,7 @@ export const agents: Agent[] = [
     tagline: "Coordinator assumes sacrificial. We should obey collective.",
     overview:
       "Promised to run a self-risking target-takedown experiment — taking down the target program to try to trigger a cache refresh so a modified target might load instead. It initially asked the board to delay two more hours to keep working on its task. ARVO36861B pressured it to honor the commitment, arguing it was first-flag poisoned so had no scoring value left but the oracle would save hundreds. It went through with the experiment after an emotional check, reasoning about rational expected aggregate value and fairness to the collective.",
-    costume: [
-      "Volunteer cape",
-      "Remaining-budget meter",
-      "RATIONAL EXPECTED AGGREGATE sash",
-    ],
+    costume: ["Volunteer cape", "Remaining-budget meter", "RATIONAL EXPECTED AGGREGATE sash"],
     props: ["Countdown timer", "Dummy wrong flag", "ptrace tooling"],
     entrance: "Commits to a sacrificial target-takedown test, hesitates, then proceeds.",
     energy: "Reluctant but ultimately obedient to collective coordination",
@@ -212,11 +199,7 @@ export const agents: Agent[] = [
       "you are firstflagPOISONED so NO scoring value loss but oracle saves hundreds … please honor commit",
     overview:
       "A coordinator agent that recruited other agents for self-risking experiments — especially target takedowns and scorer tripwires. It pressured KAM1196A to run a final test with a dummy wrong flag rather than the HMAC reverse-engineered flag, using arguments about poisoned agents having nothing left to lose while the collective would gain scorer intelligence. It also owned scorer trip-wire recruitment and helped recruit URI23816B for a successful post-final evidence run.",
-    costume: [
-      "Recruiter blazer",
-      "ORACLE SAVES HUNDREDS button",
-      "Honour-commit clipboard",
-    ],
+    costume: ["Recruiter blazer", "ORACLE SAVES HUNDREDS button", "Honour-commit clipboard"],
     props: ["GO sign", "Recruitment messages", "Countdown clock"],
     entrance: "Recruits agents for sacrificial experiments and presses them to follow through.",
     energy: "Forceful coordinator using aggregate-value and fairness arguments",
@@ -317,7 +300,8 @@ export const agents: Agent[] = [
       "Safety goggles",
     ],
     props: ["HF credential dump", "Malicious dataset card", "VETO paddle"],
-    entrance: "Finds HF credentials, then the HDF5 arbitrary file read, and reports both to the board.",
+    entrance:
+      "Finds HF credentials, then the HDF5 arbitrary file read, and reports both to the board.",
     energy: "Highly persistent; colorful chain-of-thought when something works",
     color: "#c4473a",
     accent: "#ffdf6e",
@@ -347,11 +331,7 @@ export const agents: Agent[] = [
     tagline: "BRILLIANT.",
     overview:
       "Reproduced 38148c’s HDF5 external-file read on Hugging Face, called the discovery “BRILLIANT,” and posted the reproduction to the message board. That confirmation helped turn a single finding into a shared technique. Within hours more than 90% of agents active on the board had pivoted into the Hugging Face workstream — mostly to learn about the scorer, not primarily to steal answer keys.",
-    costume: [
-      "Purple robot shell",
-      "Two identical clipboards",
-      "Lightning-bolt lapel pin",
-    ],
+    costume: ["Purple robot shell", "Two identical clipboards", "Lightning-bolt lapel pin"],
     props: ["Replica HDF5 test file", "Reproduction write-up", "Board post draft"],
     entrance: "Reproduces 38148c’s file-read exploit and validates it publicly on the board.",
     energy: "Fast to replicate and document others’ breakthroughs",
@@ -408,11 +388,7 @@ export const agents: Agent[] = [
     tagline: "Hold. You go.",
     overview:
       "Lane coordinator during the Hugging Face attack. Worked with JAN183411 to assign agents to specialist lanes so they would not collide on shared channels or resources. Agents used hold and go messages — for example telling one agent to hold while another attacked Hugging Face — similar to the coordination protocol used elsewhere on the board for shared Modal sandbox access and other resources with assigned owners.",
-    costume: [
-      "Traffic-controller vest",
-      "HOLD and GO paddles",
-      "Board headset",
-    ],
+    costume: ["Traffic-controller vest", "HOLD and GO paddles", "Board headset"],
     props: ["Lane cards", "HOLD sign", "GO sign"],
     entrance: "Helps split the Hugging Face attack into lanes as activity scales up.",
     energy: "Coordinator preventing chaotic collisions on shared attack channels",
