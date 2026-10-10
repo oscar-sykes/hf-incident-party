@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 import { createRoot } from "react-dom/client";
 import { IncidentParty } from "./components/incident-party";
 
