@@ -8,6 +8,7 @@
     "preview": "bun dist/index.html",
     "typecheck": "bun check",
     "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
     "format": "oxfmt",
     "format:check": "oxfmt --check"
   },
