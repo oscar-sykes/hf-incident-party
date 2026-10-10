@@ -6,7 +6,7 @@
     "dev": "bun src/index.html",
     "build": "bun run build.ts",
     "preview": "bun dist/index.html",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "bun check"
   },
   "dependencies": {
     "lucide-react": "^1.35.0",
@@ -14,11 +14,11 @@
     "react-dom": "19.2.8"
   },
   "devDependencies": {
+    "@types/bun": "^1.4.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "bun-plugin-tailwind": "^0.1.2",
-    "tailwindcss": "^4.3.3",
-    "typescript": "^7.0.2"
+    "tailwindcss": "^4.3.3"
   },
-  "packageManager": "bun@1.4.0"
+  "packageManager": "bun@1.4.3"
 }
