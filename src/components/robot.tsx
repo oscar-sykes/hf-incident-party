@@ -6,13 +6,21 @@ type RobotProps = {
   busy?: boolean;
 };
 
-export function Robot({ color, accent, label, size = "large", busy = false }: RobotProps) {
+export function Robot({
+  color,
+  accent,
+  label,
+  size = "large",
+  busy = false,
+}: RobotProps) {
   return (
     <div
       className={["robot", size === "small" && "robot-sm", busy && "robot-busy"]
         .filter(Boolean)
         .join(" ")}
-      style={{ "--robot": color, "--robot-accent": accent } as React.CSSProperties}
+      style={
+        { "--robot": color, "--robot-accent": accent } as React.CSSProperties
+      }
       aria-label={`${label} robot`}
       role="img"
     >

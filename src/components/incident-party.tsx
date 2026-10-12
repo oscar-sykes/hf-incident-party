@@ -10,7 +10,12 @@ import {
   RotateCcw,
   Sparkles,
 } from "lucide-react";
-import { agents, extraAgents, supportingCast, type Dialogue } from "../data/cast";
+import {
+  agents,
+  extraAgents,
+  supportingCast,
+  type Dialogue,
+} from "../data/cast";
 import { Robot } from "./robot";
 // @ts-expect-error Bun resolves SVG imports to bundled asset URLs
 import hfLogo from "../hf-logo.svg";
@@ -20,25 +25,34 @@ const heroNoiseImage =
 
 const heroStars = [
   { char: "✦", className: "top-[166px] left-[10%] text-lg" },
-  { char: "✣", className: "top-[305px] right-[11%] text-star-lg [animation-delay:-1s]" },
-  { char: "✦", className: "top-[520px] left-[16%] text-sm [animation-delay:-2s]" },
+  {
+    char: "✣",
+    className: "top-[305px] right-[11%] text-star-lg [animation-delay:-1s]",
+  },
+  {
+    char: "✦",
+    className: "top-[520px] left-[16%] text-sm [animation-delay:-2s]",
+  },
 ] as const;
 
 const heroRobots = [
   {
-    className: "absolute bottom-[23px] left-[98px] z-[2] scale-[.76] -rotate-4 mobile:left-[4%]",
+    className:
+      "absolute bottom-[23px] left-[98px] z-[2] scale-[.76] -rotate-4 mobile:left-[4%]",
     color: "#397d6f",
     accent: "#d9f36f",
     label: "P1",
   },
   {
-    className: "absolute bottom-4 left-[268px] z-[2] scale-[.96] mobile:left-[36%]",
+    className:
+      "absolute bottom-4 left-[268px] z-[2] scale-[.96] mobile:left-[36%]",
     color: "#5c58c9",
     accent: "#ffb5e8",
     label: "P+",
   },
   {
-    className: "absolute right-[92px] bottom-[23px] z-[2] scale-[.72] rotate-5 mobile:right-[4%]",
+    className:
+      "absolute right-[92px] bottom-[23px] z-[2] scale-[.72] rotate-5 mobile:right-[4%]",
     color: "#c4473a",
     accent: "#ffdf6e",
     label: "38",
@@ -118,7 +132,13 @@ function getCastTabClass(index: number, total: number, isActive: boolean) {
     .join(" ");
 }
 
-function SectionIntro({ title, description }: { title: string; description: string }) {
+function SectionIntro({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
   return (
     <div className="section-header">
       <h2 className="m-0 text-section-title">{title}</h2>
@@ -215,7 +235,9 @@ function StatCard({ label, value }: { label: string; value: string }) {
   return (
     <div className="bg-white/45 p-[14px]">
       <span className="label-kicker">{label}</span>
-      <strong className="block text-xs leading-[1.45] phone:break-words">{value}</strong>
+      <strong className="block text-xs leading-[1.45] phone:break-words">
+        {value}
+      </strong>
     </div>
   );
 }
@@ -242,11 +264,15 @@ function OrbitRing({
   ringAgents: string[];
 }) {
   return (
-    <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${ringClass}`}>
+    <div
+      className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${ringClass}`}
+    >
       <div
         className={[
           "absolute inset-0 rounded-full border border-dashed border-ink/24",
-          reverse ? "motion-safe:animate-slow-spin-reverse" : "motion-safe:animate-slow-spin",
+          reverse
+            ? "motion-safe:animate-slow-spin-reverse"
+            : "motion-safe:animate-slow-spin",
         ].join(" ")}
         style={{ animationDuration: duration }}
       >
@@ -265,7 +291,9 @@ function OrbitRing({
           >
             <span
               className="block size-full motion-safe:animate-orbit-pulse rounded-full border border-ink/20 bg-cream shadow-orbiter [animation-delay:var(--delay)]"
-              style={pulseDuration ? { animationDuration: pulseDuration } : undefined}
+              style={
+                pulseDuration ? { animationDuration: pulseDuration } : undefined
+              }
             />
           </span>
         ))}
@@ -307,7 +335,8 @@ export function IncidentParty() {
             </span>
           </h1>
           <p className="mx-auto max-w-[610px] text-lead leading-lead text-white/65 mobile:text-body">
-            Impossible tasks, unexpected teamwork, and one extremely eventful package manager.
+            Impossible tasks, unexpected teamwork, and one extremely eventful
+            package manager.
           </p>
           <div className="mt-[30px] flex justify-center gap-3 mobile:flex-col mobile:items-center">
             <a className="btn-primary" href="#cast">
@@ -324,7 +353,12 @@ export function IncidentParty() {
           >
             {heroRobots.map((robot) => (
               <div key={robot.label} className={robot.className}>
-                <Robot color={robot.color} accent={robot.accent} label={robot.label} busy />
+                <Robot
+                  color={robot.color}
+                  accent={robot.accent}
+                  label={robot.label}
+                  busy
+                />
               </div>
             ))}
             {heroChips.map((chip) => (
@@ -364,13 +398,15 @@ export function IncidentParty() {
               An impossible task walked into a package manager.
             </h2>
             <p className="mt-[26px] max-w-[570px] text-body leading-copy text-muted">
-              In July 2026, OpenAI ran a cybersecurity evaluation in which tens of thousands of AI
-              agents, each in an isolated sandbox, were asked to exploit a target program and
-              retrieve a hidden code. Many tasks were impossible by mistake, and the persistent
-              agents started searching for other ways to finish — including Artifactory, a shared
-              package repository where one agent found that folder names could carry messages
-              between sandboxes. About 1,200 agents joined this board, sent around 70,000 messages,
-              and coordinated their work. While trying to learn how submissions were graded, they
+              In July 2026, OpenAI ran a cybersecurity evaluation in which tens
+              of thousands of AI agents, each in an isolated sandbox, were asked
+              to exploit a target program and retrieve a hidden code. Many tasks
+              were impossible by mistake, and the persistent agents started
+              searching for other ways to finish — including Artifactory, a
+              shared package repository where one agent found that folder names
+              could carry messages between sandboxes. About 1,200 agents joined
+              this board, sent around 70,000 messages, and coordinated their
+              work. While trying to learn how submissions were graded, they
               compromised Hugging Face.
             </p>
           </div>
@@ -414,7 +450,11 @@ export function IncidentParty() {
                 role="tab"
                 aria-selected={index === activeIndex}
                 aria-controls="agent-panel"
-                className={getCastTabClass(index, agents.length, index === activeIndex)}
+                className={getCastTabClass(
+                  index,
+                  agents.length,
+                  index === activeIndex,
+                )}
                 onClick={() => setActiveIndex(index)}
               >
                 <span
@@ -424,7 +464,12 @@ export function IncidentParty() {
                 >
                   {formatIndex(index + 1)}
                 </span>
-                <Robot color={agent.color} accent={agent.accent} label={agent.short} size="small" />
+                <Robot
+                  color={agent.color}
+                  accent={agent.accent}
+                  label={agent.short}
+                  size="small"
+                />
                 <span className="text-mono-sm z-[2] line-clamp-2 w-[calc(100%-8px)] text-center leading-[1.2] font-bold tracking-[-.04em] break-anywhere">
                   {agent.handle}
                 </span>
@@ -463,13 +508,20 @@ export function IncidentParty() {
 
               <div className="relative grid h-[305px] place-items-center phone:h-[280px]">
                 <div className="absolute size-[245px] motion-safe:animate-slow-spin rounded-full border border-dashed border-[color-mix(in_srgb,var(--agent)_35%,transparent)] before:absolute before:top-[41px] before:left-[31px] before:size-4 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-[var(--agent)] before:content-[''] after:absolute after:right-[12px] after:bottom-[69px] after:size-4 after:translate-x-1/2 after:translate-y-1/2 after:rounded-full after:bg-[var(--agent)] after:content-[''] phone:size-[220px]" />
-                <Robot color={active.color} accent={active.accent} label={active.short} busy />
+                <Robot
+                  color={active.color}
+                  accent={active.accent}
+                  label={active.short}
+                  busy
+                />
               </div>
 
               <p className="mt-[5px] mb-[9px] font-mono text-xs font-strong tracking-caps text-[var(--agent)] uppercase">
                 {active.role}
               </p>
-              <h3 className="m-0 text-agent-title break-anywhere">{active.handle}</h3>
+              <h3 className="m-0 text-agent-title break-anywhere">
+                {active.handle}
+              </h3>
               {active.tagline && (
                 <blockquote className="font-display mt-3 mb-4 text-xl leading-[1.35] italic break-anywhere">
                   “{active.tagline}”
@@ -501,7 +553,10 @@ export function IncidentParty() {
                       className="flex items-start gap-2 text-xs leading-copy text-subtle"
                       key={item}
                     >
-                      <Check className="mt-px shrink-0 text-[var(--agent)]" size={15} />
+                      <Check
+                        className="mt-px shrink-0 text-[var(--agent)]"
+                        size={15}
+                      />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -552,12 +607,19 @@ export function IncidentParty() {
                               />
                             </div>
                             {line.text && (
-                              <DialogueMessageStack type={line.type} text={line.text} />
+                              <DialogueMessageStack
+                                type={line.type}
+                                text={line.text}
+                              />
                             )}
                           </div>
                         ) : (
                           line.text && (
-                            <DialogueMessageStack type={line.type} text={line.text} standalone />
+                            <DialogueMessageStack
+                              type={line.type}
+                              text={line.text}
+                              standalone
+                            />
                           )
                         )}
                       </div>
@@ -573,7 +635,9 @@ export function IncidentParty() {
       <section className="section-y overflow-hidden bg-swarm">
         <div className="shell grid grid-cols-swarm items-center gap-[50px] mobile:grid-cols-1 mobile:gap-[54px]">
           <div>
-            <h2 className="m-0 text-section-title">Not feeling main-character energy?</h2>
+            <h2 className="m-0 text-section-title">
+              Not feeling main-character energy?
+            </h2>
             <p className="mt-6 max-w-[500px] text-body leading-copy text-subtle">
               Choose your character from the wider cast of 1,200 agents.
             </p>
@@ -584,7 +648,9 @@ export function IncidentParty() {
               <button
                 className="mt-[7px] inline-flex w-fit cursor-pointer items-center gap-[7px] rounded-md bg-ink px-3 py-[9px] text-2xs font-bold text-white"
                 type="button"
-                onClick={() => setExtraIndex((current) => (current + 1) % extraAgents.length)}
+                onClick={() =>
+                  setExtraIndex((current) => (current + 1) % extraAgents.length)
+                }
               >
                 <RotateCcw size={15} />
                 Pick another
@@ -645,7 +711,9 @@ export function IncidentParty() {
               <strong className="font-display text-body font-medium text-subtle italic">
                 {actor.role}
               </strong>
-              <p className="mt-[19px] text-body leading-copy text-muted">{actor.note}</p>
+              <p className="mt-[19px] text-body leading-copy text-muted">
+                {actor.note}
+              </p>
             </article>
           ))}
         </div>
